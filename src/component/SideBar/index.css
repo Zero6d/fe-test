@@ -1,0 +1,52 @@
+.sidebar {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: calc(15% - 20px);
+  background-color: white;
+  height: calc(100vh - 160px);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sidebarItem{
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.scrbar{
+  width: 10px;
+  height: auto;
+  background-color:whitesmoke;
+}
+.scrbarFocus{
+  position: absolute;
+  width: 10px;
+  height:40px;
+  background-color: black;
+
+}
+.scrbarFocus2{
+  position: absolute;
+  width: 10px;
+  height:40px;
+  background-color: black;
+  margin-top:160px;
+}
+.scrbarFocus3{
+  position: absolute;
+  width: 10px;
+  height:40px;
+  background-color: black;
+  margin-top:120px;
+}
+.barItem{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}

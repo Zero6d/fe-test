@@ -1,0 +1,40 @@
+.headerBg {
+  background-color: white;
+}
+
+.header {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.blank {
+  margin-left: 20px;
+  width: calc(15% - 20px);
+  padding: 20px;
+
+}
+.headerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: calc(50% - 20px);
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.logout {
+  margin-right: 40px;
+  font-weight: 400;
+}
+
+.bar {
+  height: 2px;
+  width: auto;
+  background-color: orange;
+}
