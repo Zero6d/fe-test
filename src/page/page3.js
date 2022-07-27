@@ -11,9 +11,6 @@ const Page3 = () => (
         <div className='button'>
           <p>Create</p>
         </div>
-        <div className='button'>
-          <p>Export</p>
-        </div>
         <p className='search'>Search</p>
       </div>
     </div>
@@ -36,6 +33,36 @@ const Page3 = () => (
           </label>
         </td>
         <td>Difficult per threshold</td>
+        <td>
+          <div className='iconLeft'>
+            <FiEdit2 />
+            <FiTrash />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class='checkboxContainer'>
+            <input type='checkbox' checked />
+            <span class='checkmark'></span>
+          </label>
+        </td>
+        <td>large</td>
+        <td>
+          <div className='iconLeft'>
+            <FiEdit2 />
+            <FiTrash />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class='checkboxContainer'>
+            <input type='checkbox' checked />
+            <span class='checkmark'></span>
+          </label>
+        </td>
+        <td>large</td>
         <td>
           <div className='iconLeft'>
             <FiEdit2 />

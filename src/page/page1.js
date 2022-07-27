@@ -19,49 +19,81 @@ const Page1 = () => (
         <p className='search'>Search</p>
       </div>
     </div>
-    <table className='border-none'>
-      <tr>
-        <td>
-          <label class='checkboxContainer'>
-            <input type='checkbox' />
-            <span class='checkmark'></span>
-          </label>
-        </td>
-        <td>
-          Session name <GrFilter />
-        </td>
-        <td>
-          <CgArrowsV /> Date
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>
-          <label class='checkboxContainer'>
-            <input type='checkbox' />
-            <span class='checkmark'></span>
-          </label>
-        </td>
-        <td>test</td>
-        <td>5/16/2021 10:09</td>
-        <td>
-          <FiEdit2 />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label class='checkboxContainer'>
-            <input type='checkbox' />
-            <span class='checkmark'></span>
-          </label>
-        </td>
-        <td>large</td>
-        <td>5/16/2021 10:09</td>
-        <td>
-          <FiEdit2 />
-        </td>
-      </tr>
-    </table>
+    <div className='outter'>
+      <table className='border-none'>
+        <tr>
+          <td>
+            <label class='checkboxContainer'>
+              <input type='checkbox' />
+              <span class='checkmark'></span>
+            </label>
+          </td>
+          <td>
+            <p>
+              Session name <GrFilter />
+            </p>
+          </td>
+          <td>
+            <p>
+              <CgArrowsV /> Date
+            </p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <label class='checkboxContainer'>
+              <input type='checkbox' />
+              <span class='checkmark'></span>
+            </label>
+          </td>
+          <td>test</td>
+          <td>5/16/2021 10:09</td>
+          <td>
+            <FiEdit2 />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class='checkboxContainer'>
+              <input type='checkbox' />
+              <span class='checkmark'></span>
+            </label>
+          </td>
+          <td>large</td>
+          <td>5/16/2021 10:09</td>
+          <td>
+            <FiEdit2 />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class='checkboxContainer'>
+              <input type='checkbox' />
+              <span class='checkmark'></span>
+            </label>
+          </td>
+          <td>large</td>
+          <td>5/16/2021 10:09</td>
+          <td>
+            <FiEdit2 />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class='checkboxContainer'>
+              <input type='checkbox' />
+              <span class='checkmark'></span>
+            </label>
+          </td>
+          <td>large</td>
+          <td>5/16/2021 10:09</td>
+          <td>
+            <FiEdit2 />
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 );
 

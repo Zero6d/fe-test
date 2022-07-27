@@ -4,6 +4,7 @@ import './index.css';
 
 function SideBar() {
   const location = useLocation();
+
   return (
     <div className='sidebar'>
       <h2>Manage</h2>

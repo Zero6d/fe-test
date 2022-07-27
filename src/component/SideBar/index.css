@@ -7,7 +7,9 @@
   height: calc(100vh - 160px);
   padding: 20px;
   border-radius: 10px;
+
 }
+
 .sidebarItem{
   display: flex;
   flex-direction: row;
@@ -16,7 +18,7 @@
 .scrbar{
   width: 10px;
   height: auto;
-  background-color:whitesmoke;
+  background-color: #f1f4fb;
 }
 .scrbarFocus{
   position: absolute;
@@ -50,3 +52,16 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+@media (max-width: 480px) {
+
+ }
+
+@media (max-width: 768px) {
+
+ }
+
+ @media (max-width: 1024px) {
+  .sidebar{
+    display: none;
+  }
+ }
