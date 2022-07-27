@@ -12,7 +12,7 @@ function SideBar() {
         <div className='scrbar' />
         <div
           className={
-            location.pathname === '/fe-test'
+            location.pathname === '/fe-test/'
               ? 'scrbarFocus'
               : location.pathname === '/page2'
               ? 'scrbarFocus2'
@@ -20,8 +20,8 @@ function SideBar() {
           }
         />
         <div className='barItem'>
-          <Link to='/fe-test'>
-            <h4 className={location.pathname === '/fe-test' ? '' : 'normal'}>
+          <Link to='/fe-test/'>
+            <h4 className={location.pathname === '/fe-test/' ? '' : 'normal'}>
               Sessions
             </h4>
           </Link>
