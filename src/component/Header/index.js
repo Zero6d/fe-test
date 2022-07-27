@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Hamburger from 'hamburger-react';
 import Modal from 'react-modal';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const customStyles = {
   content: {
@@ -19,6 +19,12 @@ Modal.setAppElement(document.getElementById('root'));
 function Header() {
   const location = useLocation();
   const [isOpen, setOpen] = React.useState(false);
+  const navigate = useNavigate();
+  const toPage = (e) => {
+    setOpen(false);
+    navigate(e);
+  };
+
   return (
     <div className='headerBg'>
       <div className='header'>
@@ -42,30 +48,28 @@ function Header() {
                 <div className='marginTitle'>
                   <h3>Manage</h3>
                 </div>
-                <Link reloadDocument to='/fe-test/'>
-                  <h4
-                    className={
-                      location.pathname === '/fe-test/' ? '' : 'normal'
-                    }
-                  >
-                    Sessions
-                  </h4>
-                </Link>
+                <h4
+                  onClick={() => toPage('/fe-test/')}
+                  className={location.pathname === '/fe-test/' ? '' : 'normal'}
+                >
+                  Sessions
+                </h4>
                 <h4 className='normal'>Threshold Sets</h4>
-                <Link reloadDocument to='/page3'>
-                  <h4
-                    className={location.pathname === '/page3' ? '' : 'normal'}
-                  >
-                    Questionnaire
-                  </h4>
-                </Link>
-                <Link reloadDocument to='/page2'>
-                  <h4
-                    className={location.pathname === '/page2' ? '' : 'normal'}
-                  >
-                    AI Model
-                  </h4>
-                </Link>
+
+                <h4
+                  onClick={() => toPage('/page3')}
+                  className={location.pathname === '/page3' ? '' : 'normal'}
+                >
+                  Questionnaire
+                </h4>
+
+                <h4
+                  onClick={() => toPage('/page2')}
+                  className={location.pathname === '/page2' ? '' : 'normal'}
+                >
+                  AI Model
+                </h4>
+
                 <div className='modalLogout'>
                   <h3>Logout</h3>
                 </div>
