@@ -7,61 +7,60 @@
   height: calc(100vh - 160px);
   padding: 20px;
   border-radius: 10px;
-
 }
 
-.sidebarItem{
+.sidebarItem {
   display: flex;
   flex-direction: row;
   height: 200px;
 }
-.scrbar{
+.scrbar {
   width: 10px;
   height: auto;
   background-color: #f1f4fb;
 }
-.scrbarFocus{
+.scrbarFocus {
   position: absolute;
   width: 10px;
-  height:40px;
+  height: 40px;
   background-color: black;
-
 }
-.scrbarFocus2{
+.scrbarFocus2 {
   position: absolute;
   width: 10px;
-  height:40px;
+  height: 40px;
   background-color: black;
-  margin-top:160px;
+  margin-top: 160px;
 }
-.scrbarFocus3{
+.scrbarFocus3 {
   position: absolute;
   width: 10px;
-  height:40px;
+  height: 40px;
   background-color: black;
-  margin-top:120px;
+  margin-top: 112px;
 }
-.barItem{
+.barItem {
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
 @media (max-width: 480px) {
-
- }
+}
 
 @media (max-width: 768px) {
+}
 
- }
-
- @media (max-width: 1024px) {
-  .sidebar{
+@media (max-width: 1024px) {
+  .sidebar {
     display: none;
   }
- }
+}
