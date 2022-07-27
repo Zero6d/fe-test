@@ -42,8 +42,10 @@ function Header() {
                 <div className='marginTitle'>
                   <h3>Manage</h3>
                 </div>
-                <Link reloadDocument to='/'>
-                  <h4 className={location.pathname === '/' ? '' : 'normal'}>
+                <Link reloadDocument to='/fe-test'>
+                  <h4
+                    className={location.pathname === '/fe-test' ? '' : 'normal'}
+                  >
                     Sessions
                   </h4>
                 </Link>
